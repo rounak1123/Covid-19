@@ -1,0 +1,36 @@
+.herosec {
+  position: relative;
+  top: 0vh;
+
+  display: block;
+  height: 60vh;
+  background: url("./heroimg5.jpg") repeat-x 0 / 100% auto;
+  height: 60vh;
+  /* this value is not important, just not zero */
+  /* 
+  background-image: url("./heroimg3.jpg");
+  background-position: center;
+
+  background-repeat: repeat-x;
+  background-position: left; */
+  animation: mymove 20s linear infinite;
+}
+
+.conthero {
+  position: relative;
+  top: 15vh;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  font-size: 2em;
+  color: antiquewhite;
+}
+
+@keyframes mymove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100vw 0;
+  }
+}
