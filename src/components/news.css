@@ -1,0 +1,36 @@
+.mainnews {
+  position: relative;
+  margin: auto;
+  top: 60vh;
+  margin-bottom: 40vh;
+}
+
+.crd {
+  position: relative;
+  display: inline-block;
+  width: 40vw;
+  height: 50vh;
+  background-color: aqua;
+}
+
+.imgs {
+  width: 40vh;
+}
+
+.cntnws {
+  position: relative;
+  bottom: -250px;
+  height: 15vh;
+  background-color: rgb(240, 240, 229);
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  font-family: "Roboto Mono", monospace;
+}
+
+a {
+  color: inherit;
+
+  text-decoration: none;
+}

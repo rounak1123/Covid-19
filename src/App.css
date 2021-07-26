@@ -1,0 +1,51 @@
+.statename {
+  display: inline-block;
+  width: 28vw;
+
+  margin: 0px;
+  margin-left: 4vw;
+  margin-right: 0.5vw;
+  padding: 6px;
+  background-color: rgb(1, 39, 39);
+  color: whitesmoke;
+  font-size: 25px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+
+  font-family: "Roboto Mono", monospace;
+}
+.stateBeds {
+  display: inline-block;
+  width: 28vw;
+
+  margin: 0px;
+  margin-right: 0px;
+
+  padding: 6px;
+  background-color: #0f3b50;
+  color: whitesmoke;
+  font-size: 25px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+
+  font-family: "Roboto Mono", monospace;
+}
+
+.stateBeds:hover {
+  background-color: rgb(224, 161, 84);
+}
+.statename:hover {
+  background-color: rgb(11, 112, 112);
+}
+
+.tble {
+  position: relative;
+  top: 80vh;
+}
+
+.tableHead {
+  position: relative;
+  top: 78.5vh;
+}
