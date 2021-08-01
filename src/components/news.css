@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
 .mainnews {
   position: relative;
   margin: auto;
-  top: 60vh;
-  margin-bottom: 40vh;
+  top: 20vh;
+  /* margin-top: 20vh; */
+  margin-bottom: 80vh;
 }
 
 .crd {
@@ -20,7 +23,7 @@
 .cntnws {
   position: relative;
   bottom: -250px;
-  height: 15vh;
+  height: 24vh;
   background-color: rgb(240, 240, 229);
   font-weight: 400;
   font-size: 20px;
@@ -29,8 +32,17 @@
   font-family: "Roboto Mono", monospace;
 }
 
-a {
-  color: inherit;
-
+.newsLink {
+  color: black;
   text-decoration: none;
+  text-decoration: none;
+}
+
+.headerNews {
+  margin: 4em 0em;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+}
+.mb-5 {
+  font-weight: lighter;
 }

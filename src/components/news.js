@@ -2,8 +2,14 @@ import React, { useState, useEffect } from "react";
 import "./news.css";
 import ReactCardCarousel from "react-card-carousel";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const News = function () {
+  useEffect(() => {
+    AOS.init({ duration: 1000, offset: 20 });
+  }, []);
+
   let init = [
     { id: 0, img: "", url: "", tit: " " },
     { id: 1, img: "", url: "", tit: " " },
@@ -55,136 +61,141 @@ const News = function () {
   //   }, [ind]);
 
   return (
-    <div className="mainnews">
-      <ReactCardCarousel autoplay={true} autoplay_speed={5000}>
-        <div
-          className="crd"
-          style={{
-            backgroundColor: "red",
-            backgroundImage: "url('" + arr[0].img + "')",
-            backgroundSize: "cover",
-          }}
-        >
-          <a href={arr[0].url}>
-            {" "}
-            <div className="cntnws">
-              {arr[0].tit} <br /> Source : {arr[0].id}
-            </div>
-          </a>
-        </div>
+    <>
+      <div className="headerNews">
+        <h1 className="mb-5">🔴 LIVE</h1>
+        <h1> Latest News Updates</h1>
+      </div>
+      <div data-aos="fade-zoom-in" className="mainnews">
+        <ReactCardCarousel autoplay={true} autoplay_speed={5000}>
+          <div
+            className="crd"
+            style={{
+              backgroundColor: "red",
+              backgroundImage: "url('" + arr[0].img + "')",
+              backgroundSize: "cover",
+            }}
+          >
+            <a className="newsLink" href={arr[0].url}>
+              {" "}
+              <div className="cntnws">
+                {arr[0].tit} <br /> Source : {arr[0].id}
+              </div>
+            </a>
+          </div>
 
-        <div
-          className="crd"
-          style={{
-            backgroundColor: "red",
-            backgroundImage: "url('" + arr[1].img + "')",
-            backgroundSize: "cover",
-          }}
-        >
-          <a href={arr[1].url}>
-            {" "}
-            <div className="cntnws">
-              {arr[1].tit} <br /> Source : {arr[1].id}
-            </div>
-          </a>
-        </div>
+          <div
+            className="crd"
+            style={{
+              backgroundColor: "red",
+              backgroundImage: "url('" + arr[1].img + "')",
+              backgroundSize: "cover",
+            }}
+          >
+            <a className="newsLink" href={arr[1].url}>
+              {" "}
+              <div className="cntnws">
+                {arr[1].tit} <br /> Source : {arr[1].id}
+              </div>
+            </a>
+          </div>
 
-        <div
-          className="crd"
-          style={{
-            backgroundColor: "red",
-            backgroundImage: "url('" + arr[2].img + "')",
-            backgroundSize: "cover",
-          }}
-        >
-          <a href={arr[2].url}>
-            {" "}
-            <div className="cntnws">
-              {arr[2].tit} <br /> Source : {arr[2].id}
-            </div>
-          </a>
-        </div>
+          <div
+            className="crd"
+            style={{
+              backgroundColor: "red",
+              backgroundImage: "url('" + arr[2].img + "')",
+              backgroundSize: "cover",
+            }}
+          >
+            <a className="newsLink" href={arr[2].url}>
+              {" "}
+              <div className="cntnws">
+                {arr[2].tit} <br /> Source : {arr[2].id}
+              </div>
+            </a>
+          </div>
 
-        <div
-          className="crd"
-          style={{
-            backgroundColor: "red",
-            backgroundImage: "url('" + arr[3].img + "')",
-            backgroundSize: "cover",
-          }}
-        >
-          <a href={arr[3].url}>
-            {" "}
-            <div className="cntnws">
-              {arr[3].tit} <br /> Source : {arr[3].id}
-            </div>
-          </a>
-        </div>
+          <div
+            className="crd"
+            style={{
+              backgroundColor: "red",
+              backgroundImage: "url('" + arr[3].img + "')",
+              backgroundSize: "cover",
+            }}
+          >
+            <a className="newsLink" href={arr[3].url}>
+              {" "}
+              <div className="cntnws">
+                {arr[3].tit} <br /> Source : {arr[3].id}
+              </div>
+            </a>
+          </div>
 
-        <div
-          className="crd"
-          style={{
-            backgroundColor: "red",
-            backgroundImage: "url('" + arr[4].img + "')",
-            backgroundSize: "cover",
-          }}
-        >
-          <a href={{ pathname: arr[4].url }}>
-            {" "}
-            <div className="cntnws">
-              {arr[4].tit} <br /> Source : {arr[4].id}
-            </div>
-          </a>
-        </div>
+          <div
+            className="crd"
+            style={{
+              backgroundColor: "red",
+              backgroundImage: "url('" + arr[4].img + "')",
+              backgroundSize: "cover",
+            }}
+          >
+            <a className="newsLink" href={{ pathname: arr[4].url }}>
+              {" "}
+              <div className="cntnws">
+                {arr[4].tit} <br /> Source : {arr[4].id}
+              </div>
+            </a>
+          </div>
 
-        <div
-          className="crd"
-          style={{
-            backgroundColor: "red",
-            backgroundImage: "url('" + arr[5].img + "')",
-            backgroundSize: "cover",
-          }}
-        >
-          <a href={arr[5].url}>
-            {" "}
-            <div className="cntnws">
-              {arr[5].tit} <br /> Source : {arr[5].id}
-            </div>
-          </a>
-        </div>
+          <div
+            className="crd"
+            style={{
+              backgroundColor: "red",
+              backgroundImage: "url('" + arr[5].img + "')",
+              backgroundSize: "cover",
+            }}
+          >
+            <a className="newsLink" href={arr[5].url}>
+              {" "}
+              <div className="cntnws">
+                {arr[5].tit} <br /> Source : {arr[5].id}
+              </div>
+            </a>
+          </div>
 
-        <div
-          className="crd"
-          style={{
-            backgroundColor: "red",
-            backgroundImage: "url('" + arr[6].img + "')",
-            backgroundSize: "cover",
-          }}
-        >
-          <a href={arr[6].url}>
-            {" "}
-            <div className="cntnws">
-              {arr[6].tit} <br /> Source : {arr[6].id}
-            </div>
-          </a>
-        </div>
+          <div
+            className="crd"
+            style={{
+              backgroundColor: "red",
+              backgroundImage: "url('" + arr[6].img + "')",
+              backgroundSize: "cover",
+            }}
+          >
+            <a className="newsLink" href={arr[6].url}>
+              {" "}
+              <div className="cntnws">
+                {arr[6].tit} <br /> Source : {arr[6].id}
+              </div>
+            </a>
+          </div>
 
-        <div
-          className="crd"
-          style={{
-            backgroundColor: "red",
-            backgroundImage: "url('" + arr[7].img + "')",
-            backgroundSize: "cover",
-          }}
-        >
-          <a href={arr[7].url}>
-            {" "}
-            <div className="cntnws">
-              {arr[7].tit} <br /> Source : {arr[7].id}
-            </div>
-          </a>
-        </div>
-        {/* <div
+          <div
+            className="crd"
+            style={{
+              backgroundColor: "red",
+              backgroundImage: "url('" + arr[7].img + "')",
+              backgroundSize: "cover",
+            }}
+          >
+            <a className="newsLink" href={arr[7].url}>
+              {" "}
+              <div className="cntnws">
+                {arr[7].tit} <br /> Source : {arr[7].id}
+              </div>
+            </a>
+          </div>
+          {/* <div
           className="crd"
           style={{
             backgroundColor: "red",
@@ -214,48 +225,10 @@ const News = function () {
             </div>
           </a>
         </div> */}
-      </ReactCardCarousel>
-    </div>
+        </ReactCardCarousel>
+      </div>
+    </>
   );
 };
 
 export default News;
-
-// import React, { Component } from "react";
-// import ReactDOM from "react-dom";
-// import ReactCardCarousel from "react-card-carousel";
-
-// class MyCarousel extends Component {
-//   static get CONTAINER_STYLE() {
-//     return {
-//       position: "relative",
-//       height: "100vh",
-//       width: "100%",
-//       display: "flex",
-//       flex: 1,
-//       justifyContent: "center",
-//       alignItems: "middle",
-//     };
-//   }
-
-//   static get CARD_STYLE() {
-//     return {
-//       height: "200px",
-//       width: "200px",
-//       paddingTop: "80px",
-//       textAlign: "center",
-//       background: "#52C0F5",
-//       color: "#FFF",
-//       fontFamily: "sans-serif",
-//       fontSize: "12px",
-//       textTransform: "uppercase",
-//       borderRadius: "10px",
-//       boxSizing: "border-box",
-//     };
-//   }
-
-//   render() {}
-// }
-
-// const rootElement = document.getElementById("root");
-// ReactDOM.render(<MyCarousel />, rootElement);

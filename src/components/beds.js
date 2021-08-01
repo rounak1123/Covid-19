@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./beds.css";
 import State from "./bedscomp1";
 function Beds() {
   const [data, setData] = useState([null]);
@@ -15,6 +16,7 @@ function Beds() {
   // console.log(data);
   return (
     <div>
+      <h1 className="headBeds">Number of Beds and Hospitals available</h1>
       <div className="tableHead">
         <div className="statename">State</div>
         <div className="stateBeds">Total Beds</div>{" "}

@@ -15,7 +15,7 @@ function State(props) {
     <div>
       <div className="dta11">
         <div className="statename">{obj.state}</div>
-        <div className="stateBeds">{obj.totalBeds}</div>{" "}
+        <div className="stateBeds">{obj.totalBeds}</div>
         <div className="stateBeds">{obj.totalHospitals}</div>
       </div>
     </div>
