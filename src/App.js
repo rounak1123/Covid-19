@@ -3,7 +3,7 @@ import Navbar from "./components/navbar";
 import Hero from "./components/hero";
 import News from "./components/news";
 import Beds from "./components/beds";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Refreshtotop from "./components/Refreshtotop";
 import Footer from "./components/Footer";
 import Form from "./components/Form";
@@ -19,7 +19,7 @@ function App() {
         <Hero />
         <Buttons />
         <Switch>
-          <Route exact path="/">
+          <Route exact path="">
             <Covid />
           </Route>
           <Route exact path="/news">
