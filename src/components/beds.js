@@ -7,7 +7,7 @@ function Beds() {
     fetch("https://api.rootnet.in/covid19-in/hospitals/beds")
       .then((res) => res.json())
       .then((res1) => {
-        console.log(res1.data.regional);
+        // console.log(res1.data.regional);
 
         setData(res1.data.regional);
       });

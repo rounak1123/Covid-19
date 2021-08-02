@@ -10,16 +10,20 @@ import Form from "./components/Form";
 import Buttons from "./components/btn";
 import Covid from "./components/covid-tracker";
 import Guidelines from "./components/guidelines";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
       <div className="App">
-        {/* <Navbar /> */}
+        <ScrollToTop />
         <Hero />
         <Buttons />
         <Switch>
-          <Route exact path="">
+          <Route exact path="/">
+            <Covid />
+          </Route>
+          <Route exact path="/covidTracker">
             <Covid />
           </Route>
           <Route exact path="/news">
@@ -33,6 +37,7 @@ function App() {
             <Guidelines />
           </Route>
         </Switch>
+
         <Refreshtotop />
         <Form />
         <Footer />

@@ -41,7 +41,7 @@ const News = function () {
         arr1[i].id = dat.source.name;
       }
       setArr(arr1);
-      console.log(arr);
+      // console.log(arr);
     };
 
     temp();

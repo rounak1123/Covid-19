@@ -10,7 +10,7 @@ function State(props) {
   useEffect(() => {
     setObj({ ...props.dat[props.id] });
   }, [props.dat]);
-  console.log(obj);
+  //console.log(obj);
   return (
     <div>
       <div className="dta11">
